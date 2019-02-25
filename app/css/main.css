@@ -13,26 +13,123 @@
   src: url("../fonts/Gilroy-Bold.ttf");
 }
 
-.color {
-  color: #000;
+body {
+  background-color: #f7f7f7;
 }
 
-h1 {
+.main {
+  width: 733px;
+  margin: auto;
+  background-color: #ffffff;
+  padding-bottom: 32px;
+}
+
+.main__item {
+  width: 480px;
+  margin: auto;
+  padding-top: 57px;
+  padding-bottom: 33px;
+}
+
+.main__item__h1 {
+  color: #157bc4;
+  font-family: "Open Sans Hebrew - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.main__item__p1 {
+  color: #0e78c4;
+  font-family: "Open Sans Hebrew";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main__item__p2 {
+  color: #0e78c4;
+  font-family: "Open Sans Hebrew";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main__item__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-@media (max-width: 1200px) {
-  h1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
+.main__item__form__inputFirst {
+  width: 238px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  margin-top: 8px;
+  border: none;
+}
+
+.main__item__formNumber {
+  position: relative;
+  right: 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border: none;
+}
+
+.main__item__formNumber__p {
+  color: #4a4a4a;
+  font-family: "Open Sans Hebrew";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main__item__formNumber__Select {
+  width: 52px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  margin: 0px 7px 7px 0px;
+}
+
+.main__item__formNumber__inputFirst {
+  width: 176px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.main__item__formNumber__inputLast {
+  width: 238px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.main__item__btn {
+  width: 237px;
+  height: 50px;
+  border-radius: 26px;
+  background-color: #1692e8;
+  border: none;
+  display: block;
+  margin: 34px auto 41px;
+}
+
+.main__item__ul__liLast {
+  color: #4a4a4a;
+  font-family: "Open Sans Hebrew";
+  font-size: 14px;
+  font-weight: 400;
 }

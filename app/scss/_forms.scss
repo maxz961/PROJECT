@@ -1,27 +1,121 @@
-.color {
-    color: #000;
+body {
+    background-color: #f7f7f7;
 }
 
-.en{
-    $sides:flex-end;
-
-
-}
-
-@mixin side($side) {
-    justify-content: $side;
-    
-}
-
-
-
-h1{
-    display: flex;
-    @include side($sides)
-}
-@media (max-width:1200px){
-    h1{
-        display: flex;
-        @include side($sides)
+.main {
+    width: 733px;
+    margin: auto;
+    background-color: #ffffff;
+    padding-bottom: 32px;
+    &__item {
+        width: 480px;
+        margin: auto;
+        padding-top: 57px;
+        padding-bottom: 33px;
+        &__h1 {
+            color: #157bc4;
+            font-family: "Open Sans Hebrew - Extra Bold";
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+        }
+        &__p1 {
+            color: #0e78c4;
+            font-family: "Open Sans Hebrew";
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &__p2 {
+            color: #0e78c4;
+            font-family: "Open Sans Hebrew";
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;    
+            &__inputFirst {
+                width: 238px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: #f7f7f7;
+                margin-top: 8px;
+                border: none;
+            }
+        }
+        &__formNumber {
+            position: relative;
+            right: 0;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            border: none;
+            &__p {
+                color: #4a4a4a;
+                font-family: "Open Sans Hebrew";
+                font-size: 18px;
+                font-weight: 400;
+            }
+            &__Select{
+                width: 52px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: #f7f7f7;
+                margin: 0px 7px 7px 0px;
+            }
+            &__inputFirst {
+                width: 176px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: #f7f7f7;
+            }
+            &__inputLast {
+                width: 238px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: #f7f7f7;
+            }
+        }
+        &__btn {
+            width: 237px;
+            height: 50px;
+            border-radius: 26px;
+            background-color: #1692e8;
+            border: none;
+            display: block;
+            margin: 34px auto 41px;
+        }
+        &__ul__liLast {
+            color: #4a4a4a;
+            font-family: "Open Sans Hebrew";
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
+
+// .en{
+//     $sides:flex-end;
+
+
+// }
+
+// @mixin side($side) {
+//     justify-content: $side;
+    
+// }
+
+
+
+// h1{
+//     display: flex;
+//     @include side($sides)
+// }
+// @media (max-width:1200px){
+//     h1{
+//         display: flex;
+//         @include side($sides)
+//     }
+// }
